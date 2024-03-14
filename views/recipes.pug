@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    div.container-content
+        div.row
+            h1= title
+            a(href="/recipes/new" class='btn btn-primary')  Add New Recipe
+
+        if recipes.length
+            div.cards-container
+                each recipe, index in recipes
+                    div.card
+                        div.card-header
+                            h2.recipe-title= recipe.name
+
+                        div.card-body
+                            button.btn.btn-primary(type="button" onclick=`toggleVisibility('ingredients-${index}', 'ingredients-btn-${index}')`) Show Ingredients
+                            ul.ingredients-list(id=`ingredients-${index}` style="display: none;")
+                                each ingredient in recipe.ingredients
+                                    li= ingredient.trim()
+
+                            button.btn.btn-primary(type="button" onclick=`toggleVisibility('steps-${index}', 'steps-btn-${index}')`) Show Steps
+                            ul.steps-list(id=`steps-${index}` style="display: none;")
+                                each step in recipe.steps
+                                    li= step.trim()
+
+                        div.card-footer
+                            a(href=`/recipes/edit/${recipe.id}`, class='btn btn-warning') Edit
+                            a(href=`/recipes/delete/${recipe.id}`, class='btn btn-danger') Delete
+        else
+            p.warning No recipes available

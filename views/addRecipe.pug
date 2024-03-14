@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    div.container-content
+        h1 Create New Recipe
+        form.form(action="/recipes" method="POST")
+            label(for="name") Recipe Name:
+            input.input(type="text" name="name" id="name" required)
+            label(for="ingredients") Ingredients (comma-separated):
+            input.input(type="text" id="ingredients" name="ingredients" required)
+            label(for="steps") Steps (comma-separated):
+            input.input(type="text" id="steps" name="steps" required)
+            button(type="submit" class="btn btn-primary") Submit

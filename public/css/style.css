@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+}
+
+.nav {
+    width: 100%;
+    background-color: #000000;
+}
+.nav>div {
+    padding: 30px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav_links>a {
+    color: white;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+    align-items: flex-start;
+}
+
+.input {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.container-content {
+    margin: auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(50% - 20px);
+    /* Adjust width to account for the gap */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* Space between rows of cards */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.recipe-title {
+    margin: 0;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+    padding: 15px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.card-footer {
+    margin-top: auto;
+    /* Pushes the footer to the bottom of the card */
+    background-color: #efefef;
+    border-top: 1px solid #ddd;
+    display: flex;
+    gap: 10px;
+}
+
+
+.ingredients-list,
+.steps-list {
+    padding: 20px;
+    font-size: 20px;
+    list-style-type: none;
+    /* Indent lists */
+}
+
+
+.btn {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #efefef;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.warning {
+    text-align: center;
+}
+
+img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.index-body {
+    font-size: 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+}

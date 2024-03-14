@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1710414341210,
+    "name": "Plov",
+    "ingredients": [
+      "Carrot",
+      "Rice",
+      "Meat",
+      "Zira",
+      "Oil"
+    ],
+    "steps": [
+      "Zirvak",
+      "Add rice",
+      "Ready"
+    ]
+  },
+  {
+    "id": 1710422836565,
+    "name": "Borsch",
+    "ingredients": [
+      "Svekla",
+      "Potatoes",
+      "Cabbage",
+      "Meat"
+    ],
+    "steps": [
+      "Mix",
+      "Boil",
+      "Add water"
+    ]
+  },
+  {
+    "id": 1710422872004,
+    "name": "Somsa",
+    "ingredients": [
+      "Meat",
+      "Onions",
+      "Dough",
+      "Zira"
+    ],
+    "steps": [
+      "Mix meat",
+      "Add onions",
+      "Bake"
+    ]
+  }
+]

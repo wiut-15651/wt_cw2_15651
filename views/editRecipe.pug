@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    div.container-content
+        if error
+            p.warning Please fill all the inputs
+        h1 Edit recipe
+        form.form(action=`/recipes/update/${recipe.id}`, method="POST")
+            label(for="name") Recipe Name:
+            input.input(type="text" name="name", value=recipe.name)
+            label(for="ingredients") Ingredients (comma-separated):
+            input.input(type="text" id="ingredients" name="ingredients" required value=recipe.ingredients.join(', '))
+            label(for="steps") Steps (comma-separated):
+            input.input(type="text" id="steps" name="steps" value=recipe.steps.join(', '))
+            button(type="submit" class="btn btn-primary") Save
+
+
+

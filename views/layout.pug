@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+    head
+        title Recipe manager
+        link(rel='stylesheet' href='/css/style.css')
+        link(rel='js' href='/css/style.css')
+    body 
+        nav.nav
+            div.container.nav_links
+                a(href='/') Home  
+                a(href='/recipes/new') New Recipe
+                a(href='/recipes') My Recipes
+        div.container
+            block content 
+        script(src='/js/script.js')
